@@ -2,7 +2,7 @@
 	ui.decorateWith("appui", "standardEmrPage")
 %>
 
-${ui.includeFragment("coreapps", "patientHeader", [patient: patient.patient])}
+${ui.includeFragment("coreapps", "patientHeader", [patient: patient])}
 
 <div>
 #TODO:
