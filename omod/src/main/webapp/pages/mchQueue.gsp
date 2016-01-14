@@ -7,8 +7,11 @@
             <table cellpadding="5" cellspacing="0" width="100%" id="mchQueueList">
                 <thead>
                     <tr align="center">
-                        <th>${ui.message("ipd.patient.admissionAdvisedOn")}</th>
-                        <th></th>
+                        <th>${ui.message("mch.patient.id")}</th>
+                        <th>${ui.message("mch.patient.id")}</th>
+                        <th>${ui.message("mch.patient.id")}</th>
+                        <th>${ui.message("mch.patient.id")}</th>
+                        <th>${ui.message("mch.patient.id")}</th>
                     </tr>
                 </thead>
             </table>
