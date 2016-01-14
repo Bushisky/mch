@@ -21,15 +21,14 @@
                         <th>${ui.message("mch.visitstatus")}</th>
                     </tr>
                 </thead>
-                <% if(mchqueue!=null || mchqueue!=""){ %>
-                <% mchqueue.each { queue -> %>
+                <% if(mchQueue!=null || mchQueue!=""){ %>
+                <% mchQueue.each { queue -> %>
                 <tr align="center" >
                     <td>${queue.patientIdentifier}</td>
                     <td>${queue.patientName}</td>
                     <td>${queue.age}</td>
                     <td>${queue.sex}</td>
                     <td>${queue.visitStatus}</td>
-                    <td><a class="button task" style=""><i class="icon-plus-sign"></i>  View More</a></td>
                 </tr>
                 <% } %>
                 <% } else { %>
