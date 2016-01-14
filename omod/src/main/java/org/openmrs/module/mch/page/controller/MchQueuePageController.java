@@ -8,7 +8,7 @@ import org.openmrs.module.hospitalcore.model.OpdPatientQueue;
 import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.page.PageModel;
 
-public class McHQueuePageController {
+public class MchQueuePageController {
 	private static final int MCH_CLINIC_CONCEPT_5090 = 5090;
 
 	public void get(PageModel model, UiUtils ui) {
