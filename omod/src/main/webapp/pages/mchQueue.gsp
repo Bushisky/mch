@@ -13,22 +13,24 @@
         <div  style="margin-bottom: 15px">
             <table cellpadding="5" cellspacing="0" width="100%" id="mchQueueList">
                 <thead>
-                    <tr align="center">
+                    <tr>
                         <th>${ui.message("mch.patient.id")}</th>
                         <th>${ui.message("mch.patient.name")}</th>
                         <th>${ui.message("mch.patient.age")}</th>
                         <th>${ui.message("mch.patient.gender")}</th>
                         <th>${ui.message("mch.visitstatus")}</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <% if(mchQueue!=null || mchQueue!=""){ %>
                 <% mchQueue.each { queue -> %>
-                <tr align="center" >
+                <tr >
                     <td>${queue.patientIdentifier}</td>
                     <td>${queue.patientName}</td>
                     <td>${queue.age}</td>
                     <td>${queue.sex}</td>
                     <td>${queue.visitStatus}</td>
+                    <td><a href="${ui.pageLink("mch", "mchDashboard", [patientId: queue.patient.id])}" title="${ui.message("mch.clerk")}"><i class="icon-stethoscope"></i></a></td>
                 </tr>
                 <% } %>
                 <% } else { %>
